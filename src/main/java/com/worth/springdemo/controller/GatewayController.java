@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import javax.sql.DataSource;
 import java.util.Map;
 
 /**
@@ -25,20 +24,15 @@ public class GatewayController extends AbstractController{
     @Qualifier("gatewayService")
     GatewayServiceImpl gatewayService;
 
-    @Autowired
-    DataSource dataSource;
-
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
     public Object queryGateway(@RequestBody Map<String, Integer> paramMap){
-        logger.info("DataSource Type:" + dataSource.getClass());
         return gatewayService.queryGatewayList(paramMap);
     }
 
     @RequestMapping(path = "/{Id}", method = RequestMethod.GET)
     @ResponseBody
     public Object queryGateway(@PathVariable String Id){
-        logger.info("DataSource Type:" + dataSource.getClass());
         return gatewayService.selectByKey(Id);
     }
 
