@@ -1,6 +1,6 @@
-package com.worth.springdemo.service;
+package com.worth.springdemo.gateway.service;
 
-import com.worth.springdemo.domain.Gateway;
+import com.worth.springdemo.gateway.model.Gateway;
 
 import java.util.List;
 import java.util.Map;

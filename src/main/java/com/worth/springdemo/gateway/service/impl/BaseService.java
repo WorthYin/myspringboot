@@ -1,8 +1,7 @@
-package com.worth.springdemo.service.impl;
+package com.worth.springdemo.gateway.service.impl;
 
-import com.worth.springdemo.service.IService;
+import com.worth.springdemo.gateway.service.IService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;

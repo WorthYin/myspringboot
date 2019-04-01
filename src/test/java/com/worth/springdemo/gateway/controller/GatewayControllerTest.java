@@ -1,4 +1,4 @@
-package com.worth.springdemo.controller;
+package com.worth.springdemo.gateway.controller;
 
 import org.junit.Before;
 import org.junit.Test;

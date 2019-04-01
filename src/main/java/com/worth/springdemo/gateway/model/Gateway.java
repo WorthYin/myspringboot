@@ -1,9 +1,10 @@
-package com.worth.springdemo.domain;
+package com.worth.springdemo.gateway.model;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Table(name = "gateway")
-public class Gateway {
+public class Gateway implements Serializable{
     @Id
     @Column(name = "system_id")
     private String systemId;
@@ -133,5 +134,19 @@ public class Gateway {
      */
     public void setDescription(String description) {
         this.description = description == null ? null : description.trim();
+    }
+
+    @Override
+    public String toString() {
+        return "Gateway{" +
+                "systemId='" + systemId + '\'' +
+                ", name='" + name + '\'' +
+                ", module='" + module + '\'' +
+                ", serialNumber='" + serialNumber + '\'' +
+                ", type=" + type +
+                ", owner=" + owner +
+                ", status=" + status +
+                ", description='" + description + '\'' +
+                '}';
     }
 }

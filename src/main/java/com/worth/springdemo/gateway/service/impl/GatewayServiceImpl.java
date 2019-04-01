@@ -1,23 +1,22 @@
-package com.worth.springdemo.service.impl;
+package com.worth.springdemo.gateway.service.impl;
 
-import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
-import com.worth.springdemo.dao.GatewayMapper;
-import com.worth.springdemo.domain.Gateway;
+import com.worth.springdemo.gateway.dao.GatewayMapper;
+import com.worth.springdemo.gateway.model.Gateway;
 import com.worth.springdemo.exception.BusinessException;
-import com.worth.springdemo.service.GatewayService;
+import com.worth.springdemo.gateway.service.GatewayService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author Administrator
  * @date 2018/11/28 18:45
  */
 @Service("gatewayService")
+@Slf4j
 public class GatewayServiceImpl extends BaseService<Gateway> implements GatewayService {
 
     @Autowired

@@ -1,4 +1,4 @@
-package com.worth.springdemo.service;
+package com.worth.springdemo.gateway.service;
 
 import java.util.List;
 

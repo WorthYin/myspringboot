@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author Administrator
+ * @author yinwushuo
  * @date 2018/11/30 17:02
  */
 public class AjaxObject extends HashMap<String, Object> {

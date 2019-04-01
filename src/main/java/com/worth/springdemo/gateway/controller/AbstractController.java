@@ -1,4 +1,4 @@
-package com.worth.springdemo.controller;
+package com.worth.springdemo.gateway.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

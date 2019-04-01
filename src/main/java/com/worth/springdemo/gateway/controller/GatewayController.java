@@ -1,6 +1,6 @@
-package com.worth.springdemo.controller;
+package com.worth.springdemo.gateway.controller;
 
-import com.worth.springdemo.service.impl.GatewayServiceImpl;
+import com.worth.springdemo.gateway.service.impl.GatewayServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

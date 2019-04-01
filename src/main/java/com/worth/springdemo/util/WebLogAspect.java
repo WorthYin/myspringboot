@@ -22,7 +22,7 @@ import java.util.Arrays;
 public class WebLogAspect {
     private Logger logger = LoggerFactory.getLogger(getClass());
 
-    @Pointcut("execution(public * com.worth.springdemo.controller.*.*(..))")
+    @Pointcut("execution(public * com.worth.springdemo.gateway.controller.*.*(..))")
     public void webLogPointCut(){}
 
     @Before("webLogPointCut()")
